@@ -2,8 +2,8 @@
 
 internal static class Program
 {
-    public static int Test1SampleResult;
-    public static int Test2SampleResult;
+    public static int Test1SampleResult = -1;
+    public static int Test2SampleResult = -1;
 
     static void Main()
     {
