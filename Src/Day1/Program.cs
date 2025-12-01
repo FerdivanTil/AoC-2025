@@ -39,10 +39,6 @@ internal static partial class Program
             {
                 current += 100;
             }
-            else if(current >= 100)
-            {
-                current -= 100;
-            }
             if (current == 0)
             {
                 result++;
