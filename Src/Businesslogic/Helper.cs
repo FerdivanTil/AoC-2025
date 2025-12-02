@@ -40,7 +40,7 @@ namespace Businesslogic
             AnsiConsole.MarkupLine($"Result of {fileType} is: {resultString}");
         }
 
-        public static void WriteResult(Func<List<string>, long> func, FileType fileType, int result = 0)
+        public static void WriteResult(Func<List<string>, long> func, FileType fileType, long result = 0)
         {
             var stopwatch = new Stopwatch();
             stopwatch.Start();

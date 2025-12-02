@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Businesslogic
+namespace Businesslogic.Helpers
 {
     public static class ObjectHelper
     {
