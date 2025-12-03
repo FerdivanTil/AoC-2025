@@ -1,3 +1,5 @@
+using System.Text.RegularExpressions;
+
 namespace Day2;
 
 public class Test1Tests
@@ -36,7 +38,9 @@ public class Test1Tests
     [InlineData(38593856, 38593862, new long[] { 38593859 })]
     public void TestStep2(long start, long end, long[] result)
     {
-        Program.GetValidInRange(start, end)
+        Program.GetRange(start, end)
+            .Where(i => i.ToString().Length % 2 == 0)
+            .Where(Program.IsMatch)
          .ShouldBe(result);
     }
 }

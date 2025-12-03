@@ -55,6 +55,7 @@ internal static partial class Program
     {
         return [.. EnumerableHelper.Range(start, end - start + 1)];
     }
+
     public static bool IsMatch(long input)
     {
         var regex = Program.regex();
